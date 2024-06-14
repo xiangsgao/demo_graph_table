@@ -1,4 +1,5 @@
 {
+  "homepage": "https://xiangsgao.github.io/demo_graph_table",
   "name": "react-typescript",
   "version": "1.0.0",
   "description": "React and TypeScript example starter project",
@@ -34,10 +35,13 @@
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.9",
     "@types/styled-components": "^5.1.26",
+    "gh-pages": "^6.1.1",
     "typescript": "4.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
